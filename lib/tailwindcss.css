@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme  {
+
+    --color-background: #fff; 
+    --color-foreground: #1c1c1c; 
+
+    --color-muted: #0f1629; 
+    --color-muted-foreground: #637288; 
+
+    --color-accent: #f9f9f9; 
+    --color-accent-foreground: #303230; 
+
+    --color-popover: #fff; 
+    --color-popover-foreground: #303230; 
+
+    --color-border: #ececec; 
+    --color-input: #e5e5e5; 
+
+    --color-card: #030711; 
+    --color-card-foreground: #e1e7ef; 
+
+    --color-primary: #5563c7; 
+    --color-primary-foreground: #fefeff; 
+
+    --color-secondary: #eff0ef; 
+    --color-secondary-foreground: #303230; 
+
+    --color-destructive: #e14c4f; 
+    --color-destructive-foreground: #f8fafc; 
+
+    --color-info: #5563c7;
+    --color-info-foreground: #25120e;
+
+    --color-ring: #5563c7; 
+    --color-overlay: rgba(0, 0, 0, 0.35);
+
+    --radius-theme: 0.313rem;
+    --radius-switch: 999999rem;
+    --blur-theme: 3px;
+  }
+
+
+@layer base {
+  /*NOTE: Ez azért kell, mert a vaul egy fekete hátteret állít be. Ha ezt javítják, akkor nem lesz rá szükség:
+* https://github.com/emilkowalski/vaul/issues/259
+* */
+  [vaul-drawer-wrapper] {
+    @apply !bg-transparent;
+  }
+  [data-theme="oblivion"] {
+    --color-background: #0c0c0c; 
+    --color-foreground: #cbdddf; 
+
+    --color-muted: #1c2528; 
+    --color-muted-foreground: #2b3c43; 
+
+    --color-accent: #111518; 
+    --color-accent-foreground: #a1bfc2; 
+
+    --color-popover: #101517; 
+    --color-popover-foreground: #a3aab5; 
+
+    --color-border: #1d283a; 
+    --color-input: #2c3f43; 
+
+    --color-card: #030711; 
+    --color-card-foreground: #e1e7ef; 
+
+    --color-primary: #ffffd3; 
+    --color-primary-foreground: #010204; 
+
+    --color-secondary: #101517; 
+    --color-secondary-foreground: #f8fafc; 
+
+    --color-destructive: #fe6440; 
+    --color-destructive-foreground: #25120e; 
+
+    --color-info: #bbffff;
+    --color-info-foreground: #25120e;
+
+    --color-ring: #1d2729; 
+    --color-ring-destructive: #761518;
+
+    --color-overlay: #000000f2;
+
+    --radius-theme: 0rem;
+    --radius-switch: 0rem;
+
+    --blur-theme: 3px;
+    @apply bg-background text-foreground;
+
+
+    .dotted {
+      @apply bg-[radial-gradient(#16282c_0.1px,transparent_0.9px)] [background-size:48px_48px];
+    }
+  }
+
+  [data-theme="dark"] {
+    --color-background: #121316; 
+    --color-foreground: #e1e7ef; 
+
+    --color-muted: #0f1629; 
+    --color-muted-foreground: #637288; 
+
+    --color-accent: #25262b; 
+    --color-accent-foreground: #f1f2f2; 
+
+    --color-popover: #000000; 
+    --color-popover-foreground: #94a3b8; 
+
+    --color-border: #27282d; 
+    --color-input: #242424; 
+
+    --color-card: #030711; 
+    --color-card-foreground: #e1e7ef; 
+
+    --color-primary: #f8fafc; 
+    --color-primary-foreground: #010204; 
+
+    --color-secondary: #25262b; 
+    --color-secondary-foreground: #f1f2f2; 
+
+    --color-destructive: #922742; 
+    --color-ring-destructive: #761518;
+    
+
+    --color-info: #64aaf3;
+    --color-info-foreground: #25120e;
+
+    --color-ring: #32333b; 
+    --color-overlay: #000000f2;
+
+
+    --radius-theme: 0.313rem;
+    --radius-switch: 999999rem;
+
+     --blur-theme: 3px;   
+
+    @apply bg-background text-foreground;
+
+  }
+  }

@@ -11,9 +11,9 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
-      name: "Oblivion",
+      name: "Oblivion ui",
       formats: ["es", "umd"],
-      fileName: "oblivion",
+      fileName: "oblivion-ui",
     },
     rollupOptions: {
       output: {

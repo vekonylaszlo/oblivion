@@ -23,7 +23,9 @@ export default defineConfig({
         globals: ["react", "react-dom", "react/jsx-runtime"]
       },
 
-
     },
+    target: 'esnext',
+    sourcemap: true,
+
   },
 })

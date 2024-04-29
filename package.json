@@ -14,12 +14,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist",
-    "components",
-    "main.d.ts",
-    "oblivion-ui.umd.cjs",
-    "oblivion-ui.js",
-    "style.css"
+    "dist"
   ],
   "type": "module",
   "scripts": {

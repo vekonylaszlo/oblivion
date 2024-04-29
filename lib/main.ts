@@ -47,6 +47,7 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
 } from './components/dropdown-menu'
+import { Badge } from "./components/badge"
 
 
 export {
@@ -54,6 +55,7 @@ export {
 
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 
+  Badge,
   Progress,
   Tooltip, TooltipContent, TooltipTrigger,
   Textarea,
@@ -64,8 +66,7 @@ export {
   Input,
   Button,
   Popover, PopoverTrigger, PopoverContent,
-  Calendar,
-  Dialog, DialogClose, DialogContent, DialogTitle, DialogFooter, DialogHeader, DialogPortal, DialogTrigger, DialogOverlay, DialogDescription,
+  Calendar, Dialog, DialogClose, DialogContent, DialogTitle, DialogFooter, DialogHeader, DialogPortal, DialogTrigger, DialogOverlay, DialogDescription,
   Form, FormItem, FormField, FormLabel, FormControl, FormMessage, FormDescription, useFormField,
   Table, TableRow, TableBody, TableCell, TableHead, TableFooter, TableHeader, TableCaption,
   Toggle,

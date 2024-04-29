@@ -1,7 +1,7 @@
 {
   "name": "oblivion-ui",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",
@@ -11,7 +11,7 @@
       "import": "./dist/oblivion-ui.js",
       "require": "./dist/oblivion-ui.umd.cjs"
     },
-      "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css"
   },
   "files": [
     "dist"
@@ -69,6 +69,7 @@
     "vite-plugin-dts": "^3.9.0"
   },
   "dependencies": {
+    "@radix-ui/react-toggle": "^1.0.3",
     "vite-plugin-css-injected-by-js": "^3.5.1"
   }
 }

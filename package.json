@@ -1,20 +1,20 @@
 {
   "name": "oblivion-ui",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",
   "exports": {
     ".": {
       "types": "./dist/main.d.ts",
-      "import": "./dist/oblivion-ui.es.js",
-      "require": "./dist/oblivion-ui.umd.js",
+      "import": "./dist/oblivion-ui.js",
+      "require": "./dist/oblivion-ui.umd.cjs",
       "styles": "./dist/style.css"
     }
   },
   "files": [
-    "dist/*"
+    "dist"
   ],
   "type": "module",
   "scripts": {

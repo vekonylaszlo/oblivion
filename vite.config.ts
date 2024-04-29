@@ -8,7 +8,7 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), dts({ include: 'lib', insertTypesEntry: true }), cssInjectedByJsPlugin()],
+  plugins: [react(), tailwindcss(), dts({ include: 'lib', insertTypesEntry: true })],
   build: {
     copyPublicDir: false,
     lib: {

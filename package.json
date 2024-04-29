@@ -1,7 +1,7 @@
 {
   "name": "oblivion-ui",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",
@@ -14,7 +14,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist"
+    "dist/*"
   ],
   "type": "module",
   "scripts": {

@@ -14,13 +14,18 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
       name: "Oblivion ui",
-      formats: ["es"],
+      formats: ['es', 'umd'],
       fileName: "oblivion-ui",
     },
     rollupOptions: {
       external: [...Object.keys(peerDependencies)],
       output: {
-        globals: ["react", "react-dom", "react/jsx-runtime"]
+        globals: {
+          react: "React",
+          'react-dom': "ReactDOM",
+          'react/jsx-runtime': "react/jsx-runtime",
+          tailwindcss: 'tailwindcss'
+        },
       },
 
     },

@@ -14,7 +14,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist"
+    "dist",
     "components", 
     "main.d.ts",
     "oblivion-ui.umd.cjs",

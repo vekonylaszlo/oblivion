@@ -1,132 +1,17 @@
 {
   "name": "oblivion-ui",
   "private": false,
-  "version": "0.0.18",
+  "version": "0.0.19",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
-  "types": "dist/main.d.ts",
+  "types": "dist/main.d.ts",  
   "exports": {
   ".": {
     "types": "./dist/main.d.ts",
-    "import": "./dist/main.js",
-    "require": "./dist/main.umd.js"
-  },
-  "./dist/style.css": "./dist/style.css",
-  "./components/avatar": {
-    "Avatar": "./dist/components/avatar/Avatar.js",
-    "AvatarImage": "./dist/components/avatar/AvatarImage.js",
-    "AvatarFallback": "./dist/components/avatar/AvatarFallback.js"
-  },
-  "./components/select": {
-    "Select": "./dist/components/select/Select.js",
-    "SelectContent": "./dist/components/select/SelectContent.js",
-    "SelectItem": "./dist/components/select/SelectItem.js",
-    "SelectTrigger": "./dist/components/select/SelectTrigger.js",
-    "SelectValue": "./dist/components/select/SelectValue.js"
-  },
-  "./components/progress": "./dist/components/progress/Progress.js",
-  "./components/tooltip": {
-    "Tooltip": "./dist/components/tooltip/Tooltip.js",
-    "TooltipContent": "./dist/components/tooltip/TooltipContent.js",
-    "TooltipTrigger": "./dist/components/tooltip/TooltipTrigger.js"
-  },
-  "./components/form": {
-    "Form": "./dist/components/form/Form.js",
-    "FormItem": "./dist/components/form/FormItem.js",
-    "FormField": "./dist/components/form/FormField.js",
-    "FormLabel": "./dist/components/form/FormLabel.js",
-    "FormControl": "./dist/components/form/FormControl.js",
-    "FormMessage": "./dist/components/form/FormMessage.js",
-    "FormDescription": "./dist/components/form/FormDescription.js",
-    "useFormField": "./dist/components/form/useFormField.js"
-  },
-  "./components/alert-dialog": {
-    "AlertDialog": "./dist/components/alert-dialog/AlertDialog.js",
-    "AlertDialogPortal": "./dist/components/alert-dialog/AlertDialogPortal.js",
-    "AlertDialogOverlay": "./dist/components/alert-dialog/AlertDialogOverlay.js",
-    "AlertDialogTrigger": "./dist/components/alert-dialog/AlertDialogTrigger.js",
-    "AlertDialogContent": "./dist/components/alert-dialog/AlertDialogContent.js",
-    "AlertDialogHeader": "./dist/components/alert-dialog/AlertDialogHeader.js",
-    "AlertDialogFooter": "./dist/components/alert-dialog/AlertDialogFooter.js",
-    "AlertDialogTitle": "./dist/components/alert-dialog/AlertDialogTitle.js",
-    "AlertDialogDescription": "./dist/components/alert-dialog/AlertDialogDescription.js",
-    "AlertDialogAction": "./dist/components/alert-dialog/AlertDialogAction.js",
-    "AlertDialogCancel": "./dist/components/alert-dialog/AlertDialogCancel.js"
-  },
-  "./components/dropdown-menu": {
-    "DropdownMenu": "./dist/components/dropdown-menu/DropdownMenu.js",
-    "DropdownMenuTrigger": "./dist/components/dropdown-menu/DropdownMenuTrigger.js",
-    "DropdownMenuContent": "./dist/components/dropdown-menu/DropdownMenuContent.js",
-    "DropdownMenuItem": "./dist/components/dropdown-menu/DropdownMenuItem.js",
-    "DropdownMenuCheckboxItem": "./dist/components/dropdown-menu/DropdownMenuCheckboxItem.js",
-    "DropdownMenuRadioItem": "./dist/components/dropdown-menu/DropdownMenuRadioItem.js",
-    "DropdownMenuLabel": "./dist/components/dropdown-menu/DropdownMenuLabel.js",
-    "DropdownMenuSeparator": "./dist/components/dropdown-menu/DropdownMenuSeparator.js",
-    "DropdownMenuShortcut": "./dist/components/dropdown-menu/DropdownMenuShortcut.js",
-    "DropdownMenuGroup": "./dist/components/dropdown-menu/DropdownMenuGroup.js",
-    "DropdownMenuPortal": "./dist/components/dropdown-menu/DropdownMenuPortal.js",
-    "DropdownMenuSub": "./dist/components/dropdown-menu/DropdownMenuSub.js",
-    "DropdownMenuSubContent": "./dist/components/dropdown-menu/DropdownMenuSubContent.js",
-    "DropdownMenuSubTrigger": "./dist/components/dropdown-menu/DropdownMenuSubTrigger.js",
-    "DropdownMenuRadioGroup": "./dist/components/dropdown-menu/DropdownMenuRadioGroup.js"
-  },
-  "./components/badge": "./dist/components/badge/Badge.js",
-  "./components/hover-card": {
-    "HoverCard": "./dist/components/hover-card/HoverCard.js",
-    "HoverCardContent": "./dist/components/hover-card/HoverCardContent.js",
-    "HoverCardTrigger": "./dist/components/hover-card/HoverCardTrigger.js"
-  },
-  "./components/command": {
-    "Command": "./dist/components/command/Command.js",
-    "CommandDialog": "./dist/components/command/CommandDialog.js",
-    "CommandEmpty": "./dist/components/command/CommandEmpty.js",
-    "CommandGroup": "./dist/components/command/CommandGroup.js",
-    "CommandInput": "./dist/components/command/CommandInput.js",
-    "CommandItem": "./dist/components/command/CommandItem.js",
-    "CommandList": "./dist/components/command/CommandList.js",
-    "CommandSeparator": "./dist/components/command/CommandSeparator.js",
-    "CommandShortcut": "./dist/components/command/CommandShortcut.js"
-  },
-  "./components/toggle": "./dist/components/toggle/Toggle.js",
-  "./components/table": {
-    "Table": "./dist/components/table/Table.js",
-    "TableRow": "./dist/components/table/TableRow.js",
-    "TableBody": "./dist/components/table/TableBody.js",
-    "TableCell": "./dist/components/table/TableCell.js",
-    "TableHead": "./dist/components/table/TableHead.js",
-    "TableFooter": "./dist/components/table/TableFooter.js",
-    "TableHeader": "./dist/components/table/TableHeader.js",
-    "TableCaption": "./dist/components/table/TableCaption.js"
-  },
-  "./components/dialog": {
-    "Dialog": "./dist/components/dialog/Dialog.js",
-    "DialogClose": "./dist/components/dialog/DialogClose.js",
-    "DialogContent": "./dist/components/dialog/DialogContent.js",
-    "DialogTitle": "./dist/components/dialog/DialogTitle.js",
-    "DialogFooter": "./dist/components/dialog/DialogFooter.js",
-    "DialogHeader": "./dist/components/dialog/DialogHeader.js",
-    "DialogOverlay": "./dist/components/dialog/DialogOverlay.js",
-    "DialogPortal": "./dist/components/dialog/DialogPortal.js",
-    "DialogTrigger": "./dist/components/dialog/DialogTrigger.js",
-    "DialogDescription": "./dist/components/dialog/DialogDescription.js"
-  },
-  "./components/calendar": "./dist/components/calendar/Calendar.js",
-  "./components/popover": {
-    "Popover": "./dist/components/popover/Popover.js",
-    "PopoverContent": "./dist/components/popover/PopoverContent.js",
-    "PopoverTrigger": "./dist/components/popover/PopoverTrigger.js"
-  },
-  "./components/button": "./dist/components/button/Button.js",
-  "./components/input": "./dist/components/input/Input.js",
-  "./components/checkbox": "./dist/components/checkbox/Checkbox.js",
-  "./components/alert": {
-    "Alert": "./dist/components/alert/Alert.js",
-    "AlertDescription": "./dist/components/alert/AlertDescription.js",
-    "AlertTitle": "./dist/components/alert/AlertTitle.js"
-  },
-  "./components/switch": "./dist/components/switch/Switch.js",
-  "./components/label": "./dist/components/label/Label.js",
-  "./components/textarea": "./dist/components/textarea/Textarea.js"
+      "import": "./dist/oblivion-ui.js",
+      "require": "./dist/oblivion-ui.umd.cjs"
+    },
+  "./dist/style.css": "./dist/style.css"
 },
   "files": [
     "dist"

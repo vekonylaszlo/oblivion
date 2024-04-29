@@ -1,5 +1,4 @@
 import tailwindcss from '@tailwindcss/vite'
-import { peerDependencies } from './package.json';
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
@@ -18,7 +17,6 @@ export default defineConfig({
       fileName: "oblivion-ui",
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies)],
       output: {
         globals: ["react", "react-dom", "react/jsx-runtime"]
       },

@@ -1,7 +1,7 @@
 {
   "name": "oblivion-ui",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",
@@ -15,7 +15,7 @@
   },
   "files": [
     "dist",
-    "components", 
+    "components",
     "main.d.ts",
     "oblivion-ui.umd.cjs",
     "oblivion-ui.js",
@@ -50,8 +50,8 @@
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "lucide-react": "^0.376.0",
-    "react-day-picker": "^8.10.1",
     "react": "^18.2.0",
+    "react-day-picker": "^8.10.1",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.3",
     "sonner": "^1.4.41",
@@ -72,5 +72,8 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.0"
+  },
+  "dependencies": {
+    "vite-plugin-css-injected-by-js": "^3.5.1"
   }
 }

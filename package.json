@@ -12,7 +12,8 @@
       "import": "./dist/oblivion-ui.es.js",
       "require": "./dist/oblivion-ui.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./dist/app.css": "./dist/app.css"
   },
   "files": [
     "dist"

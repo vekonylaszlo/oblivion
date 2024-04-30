@@ -7,14 +7,12 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), dts({ include: 'lib', insertTypesEntry: true, rollupTypes: true })],
+  plugins: [react(), tailwindcss(), dts({ include: 'lib' })],
   build: {
-    copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
       name: "Oblivion ui",
-      formats: ['es'],
-      fileName: "oblivion-ui",
+      fileName: (format) => `oblivion-ui.${format}.js`,
     },
     rollupOptions: {
       external: [...Object.keys(peerDependencies)],
@@ -44,13 +42,12 @@ export default defineConfig({
           '@radix-ui/react-popover': 'react-popover',
           '@radix-ui/react-checkbox': 'react checkbox',
           '@radix-ui/react-switch': 'react-switch'
-
         },
       },
 
     },
     target: 'esnext',
     sourcemap: true,
-
+    emptyOutDir: true,
   },
 })

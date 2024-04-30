@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
       name: "Oblivion ui",
-      formats: ['es', 'umd'],
+      formats: ['es'],
       fileName: "oblivion-ui",
     },
     rollupOptions: {

@@ -2,15 +2,14 @@
   "name": "oblivion-ui",
   "author": "Vékony László",
   "private": false,
-  "version": "0.0.21",
-  "main": "dist/oblivion-ui.umd.cjs",
+  "version": "0.0.22",
+  "main": "dist/oblivion-ui.js",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",  
   "exports": {
   ".": {
       "types": "./dist/main.d.ts",
-      "import": "./dist/oblivion-ui.js",
-      "require": "./dist/oblivion-ui.umd.cjs"
+      "import": "./dist/oblivion-ui.js"
     },
   "./dist/style.css": "./dist/style.css"
 },

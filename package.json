@@ -1,6 +1,6 @@
 {
   "name": "oblivion-ui",
-  "author": "Vékony László",
+  "author": "Vekony Laszlo",
   "private": false,
   "version": "0.0.24",
   "main": "dist/oblivion-ui.umd.js",

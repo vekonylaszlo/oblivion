@@ -1,4 +1,3 @@
-import tailwindcss from '@tailwindcss/vite'
 import { peerDependencies } from './package.json';
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -7,7 +6,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), dts({ include: 'lib' })],
+  plugins: [react(), dts({ include: 'lib' })],
   build: {
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
@@ -22,7 +21,6 @@ export default defineConfig({
           'react-dom': "ReactDOM",
           'react/jsx-runtime': "react/jsx-runtime",
           tailwindcss: 'tailwindcss',
-          '@tailwindcss/vite': 'tailwindcss-vite',
           '@radix-ui/react-avatar': "react-avatar",
           clsx: 'clsx',
           'tailwind-merge': 'tailwind-merge',

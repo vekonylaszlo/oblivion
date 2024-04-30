@@ -2,13 +2,13 @@
   "name": "oblivion-ui",
   "author": "Vékony László",
   "private": false,
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",  
   "exports": {
   ".": {
-    "types": "./dist/main.d.ts",
+      "types": "./dist/main.d.ts",
       "import": "./dist/oblivion-ui.js",
       "require": "./dist/oblivion-ui.umd.cjs"
     },
@@ -23,7 +23,6 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "sideEffects": false,
   "peerDependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-alert-dialog": "^1.0.5",

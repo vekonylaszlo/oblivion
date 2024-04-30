@@ -1,7 +1,8 @@
 {
   "name": "oblivion-ui",
+  "author": "Vékony László",
   "private": false,
-  "version": "0.0.19",
+  "version": "0.0.20",
   "main": "dist/oblivion-ui.umd.cjs",
   "module": "dist/oblivion-ui.js",
   "types": "dist/main.d.ts",  
@@ -22,6 +23,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "sideEffects": false,
   "peerDependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -39,6 +41,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@radix-ui/react-toggle": "^1.0.3",
     "@tailwindcss/vite": "4.0.0-alpha.14",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -67,9 +70,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.0"
-  },
-  "dependencies": {
-    "@radix-ui/react-toggle": "^1.0.3",
-    "vite-plugin-css-injected-by-js": "^3.5.1"
   }
 }

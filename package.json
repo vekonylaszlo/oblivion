@@ -2,7 +2,7 @@
   "name": "oblivion-ui",
   "author": "Vekony Laszlo",
   "private": false,
-  "version": "0.0.25",
+  "version": "0.0.26",
   "main": "dist/oblivion-ui.umd.js",
   "module": "dist/oblivion-ui.es.js",
   "types": "dist/main.d.ts",
@@ -21,9 +21,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "preview": "vite preview"
   },
   "peerDependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -43,7 +41,6 @@
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@tailwindcss/vite": "4.0.0-alpha.14",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -56,25 +53,15 @@
     "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
     "vaul": "^0.9.0",
-    "zod": "^3.23.4"
+    "zod": "^3.23.4",
+    "@tailwindcss/vite": "4.0.0-alpha.14",
+    "tailwindcss": "4.0.0-alpha.14"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "1.3.3",
-    "@storybook/addon-essentials": "^8.0.9",
-    "@storybook/addon-interactions": "^8.0.9",
-    "@storybook/addon-links": "^8.0.9",
-    "@storybook/addon-onboarding": "^8.0.9",
-    "@storybook/blocks": "^8.0.9",
-    "@storybook/react": "^8.0.9",
-    "@storybook/react-vite": "^8.0.9",
-    "@storybook/test": "^8.0.9",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-storybook": "^0.8.0",
-    "storybook": "^8.0.9",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.0"

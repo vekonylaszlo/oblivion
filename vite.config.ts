@@ -22,6 +22,7 @@ export default defineConfig({
           'react-dom': "ReactDOM",
           'react/jsx-runtime': "react/jsx-runtime",
           tailwindcss: 'tailwindcss',
+          '@tailwindcss/vite': 'tailwindcss-vite',
           '@radix-ui/react-avatar': "react-avatar",
           clsx: 'clsx',
           'tailwind-merge': 'tailwind-merge',
@@ -44,7 +45,6 @@ export default defineConfig({
           '@radix-ui/react-switch': 'react-switch'
         },
       },
-
     },
     target: 'esnext',
     sourcemap: true,

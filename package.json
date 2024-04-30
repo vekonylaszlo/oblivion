@@ -2,7 +2,7 @@
   "name": "oblivion-ui",
   "author": "Vekony Laszlo",
   "private": false,
-  "version": "0.0.24",
+  "version": "0.0.25",
   "main": "dist/oblivion-ui.umd.js",
   "module": "dist/oblivion-ui.es.js",
   "types": "dist/main.d.ts",

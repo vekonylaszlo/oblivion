@@ -9,7 +9,7 @@
   "exports": {
     ".": {
       "types": "./dist/main.d.ts",
-      "import": "./dist/oblivion-ui.es.js"
+      "import": "./dist/oblivion-ui.es.js",
       "require": "./dist/oblivion-ui.umd.js"
     },
     "./dist/style.css": "./dist/style.css"

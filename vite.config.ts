@@ -4,13 +4,16 @@ import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import path from 'path'
 
+console.log([...Object.keys(peerDependencies)])
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ include: 'lib' })],
+  plugins: [react(), dts({ include: ['lib'], insertTypesEntry: true })],
   build: {
+    copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
       name: "Oblivion ui",
+      formats: ['es', 'umd'],
       fileName: (format) => `oblivion-ui.${format}.js`,
     },
     rollupOptions: {

@@ -32,8 +32,8 @@ export default {
         "border": "var(--color-border)",
       },
       borderRadius: {
-        "radius-theme": "var(--radius-theme)",
-        "radius-switch": "var(--radius-switch)",
+        "theme": "var(--radius-theme)",
+        "switch": "var(--radius-switch)",
       },
       blur: {
         "blur-theme": "var(--blur-theme)"

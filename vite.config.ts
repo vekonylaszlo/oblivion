@@ -1,5 +1,6 @@
 import { peerDependencies } from './package.json';
 import { defineConfig } from 'vite'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import path from 'path'
@@ -7,7 +8,16 @@ import path from 'path'
 console.log([...Object.keys(peerDependencies)])
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ include: ['lib'], insertTypesEntry: true })],
+  plugins: [react(), dts({ include: ['lib'], insertTypesEntry: true }),
+  viteStaticCopy(({
+    targets: [
+      {
+        src: './tailwind.config.js',
+        dest: ''
+      }
+    ]
+  }))
+  ],
   build: {
     copyPublicDir: false,
     lib: {

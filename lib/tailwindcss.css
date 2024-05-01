@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @theme  {
-
     --color-background: #fff; 
     --color-foreground: #1c1c1c; 
 
@@ -50,6 +49,7 @@
   [vaul-drawer-wrapper] {
     @apply !bg-transparent;
   }
+
   [data-theme="oblivion"] {
     --color-background: #0c0c0c; 
     --color-foreground: #cbdddf; 
